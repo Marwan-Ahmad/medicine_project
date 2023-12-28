@@ -1,0 +1,2157 @@
+{
+	"info": {
+		"_postman_id": "d9e8b5d9-41fb-4a59-941e-af10a6180263",
+		"name": "laravel project app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30840095"
+	},
+	"item": [
+		{
+			"name": "auth pharmacy",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstname",
+									"value": "marwan",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "ahamd",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0938156383",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "damac",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "8220178",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": [
+						{
+							"name": "unique",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "firstname",
+											"value": "marwan",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "ahamd",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "+963938156382",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "damac",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/register"
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 13:54:56 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 13:54:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The phone has already been taken.\",\n    \"errors\": {\n        \"phone\": [\n            \"The phone has already been taken.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "firstname",
+											"value": "marwan",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "ahamd",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "+963938156382",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "damac",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/register"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 14:00:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 14:00:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"user\": {\n            \"firstname\": \"marwan\",\n            \"lastname\": \"ahamd\",\n            \"phone\": \"+963938156382\",\n            \"address\": \"damac\",\n            \"updated_at\": \"2023-12-10T14:00:03.000000Z\",\n            \"created_at\": \"2023-12-10T14:00:03.000000Z\",\n            \"id\": 4\n        },\n        \"token\": \"1|tttURCITlYtnzft2aSCCMBVz3jhTwAtYRonVE4R218a16c9b\"\n    },\n    \"message\": \"You Created a New Account\"\n}"
+						},
+						{
+							"name": "required",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "firstname",
+											"value": "marwan",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "lastname",
+											"value": "ahamd",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "phone",
+											"value": "+963938156382",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "damac",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/register"
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 13:54:35 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Dec 2023 13:54:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The firstname field is required. (and 4 more errors)\",\n    \"errors\": {\n        \"firstname\": [\n            \"The firstname field is required.\"\n        ],\n        \"lastname\": [\n            \"The lastname field is required.\"\n        ],\n        \"phone\": [\n            \"The phone field is required.\"\n        ],\n        \"address\": [\n            \"The address field is required.\"\n        ],\n        \"password\": [\n            \"The password field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3PaYMxnNR0FnYjuhe1r0Q6725o4zAElOAbmXvU4vead4ce60"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0938156382",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "8220178",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/login"
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "0938156382",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:17:24 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:17:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "55"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": {\n        \"info\": {\n            \"id\": 4,\n            \"firstname\": \"marwan\",\n            \"lastname\": \"ahamd\",\n            \"phone\": \"0938156382\",\n            \"address\": \"damac\",\n            \"created_at\": \"2023-12-10T14:00:03.000000Z\",\n            \"updated_at\": \"2023-12-10T14:00:03.000000Z\"\n        },\n        \"token\": \"7|4dOIrZd5aqgjIhShN2NmYXaP56ZGEOyfqyjlwOwk61b7eaf7\"\n    },\n    \"message\": \"You Logging in Successfuly\"\n}"
+						},
+						{
+							"name": "phone is 10 digits",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "09381563829",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:17:50 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:17:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "54"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The phone field must be 10 digits.\",\n    \"errors\": {\n        \"phone\": [\n            \"The phone field must be 10 digits.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "the phone is not in db",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "0938156387",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "8220168",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:18:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:18:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The selected phone is invalid.\",\n    \"errors\": {\n        \"phone\": [\n            \"The selected phone is invalid.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "the password is not correct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "phone",
+											"value": "0938156382",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "82201687",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:20:30 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 14:20:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"the Password is incorrect\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Brearer 10|u6u1MARat1DpXuy1CMvoXgTh11O3hCvvEPSt9uKNf0b57845",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/logout"
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Brearer 10|u6u1MARat1DpXuy1CMvoXgTh11O3hCvvEPSt9uKNf0b57845",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": "http://127.0.0.1:8000/api/logout"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 15:26:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 Dec 2023 15:26:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 1,\n    \"data\": [],\n    \"message\": \"Successfully logged out\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "showmedicine",
+			"item": [
+				{
+					"name": "category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "qqqqqq",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/category"
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category",
+											"value": "qqqqqq",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/category"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Dec 2023 09:30:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Dec 2023 09:30:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": [\n        {\n            \"category\": \"headec\"\n        },\n        {\n            \"category\": \"teeth-pain\"\n        },\n        {\n            \"category\": \"Antipyretic\"\n        },\n        {\n            \"category\": \"Herb/Supplement\"\n        },\n        {\n            \"category\": \"Vitamin\"\n        },\n        {\n            \"category\": \"Antihistamine\"\n        },\n        {\n            \"category\": \"Antidepressant\"\n        },\n        {\n            \"category\": \"Proton pump inhibitor\"\n        },\n        {\n            \"category\": \"Analgesic\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "medicines",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/medicines"
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category",
+											"value": "Vitamin",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/medicines"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:09:05 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:09:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": [\n        {\n            \"commercialname\": \"Vitamin C\",\n            \"scientificname\": \"Ascorbic acid\",\n            \"company\": \"Nature's Way\",\n            \"category\": \"Vitamin\",\n            \"price\": 10000,\n            \"expirationdate\": \"2059-09-11\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search_term",
+									"value": "teeth",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/search"
+					},
+					"response": [
+						{
+							"name": "The Search Is Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search_term",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "medicinename",
+											"value": "mmmm",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/search"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 20:58:25 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 20:58:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massege\": \"You Don't Insert any Thing In The Search\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "searchsuccess",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search_term",
+											"value": "Vitamin",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/search"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Dec 2023 09:33:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Dec 2023 09:33:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"commercialname\": \"Vitamin C\",\n            \"category\": \"Vitamin\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search_term",
+											"value": "k555",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/search"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:01:31 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:01:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No matching medicine found in the warehouse\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "medicineinfo",
+			"item": [
+				{
+					"name": "medicineinfo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/medicininfo"
+					},
+					"response": [
+						{
+							"name": "Not Found Info",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/medicininfo"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Dec 2023 11:22:52 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Dec 2023 11:22:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massege\": \"Medicine Not Have Information To Found It\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/medicininfo"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:06:46 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 16:06:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massege\": \"The Medicine Information Is Founded\",\n    \"data\": {\n        \"scientificname\": \"teethproten\",\n        \"commercialname\": \"flan-k\",\n        \"category\": \"teeth-pain\",\n        \"company\": \"zet\",\n        \"expirationdate\": \"2056-03-04\",\n        \"price\": 4500\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Creatorder",
+			"item": [
+				{
+					"name": "CreateOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cart_medicins[1][medicin_id]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[1][quantity]",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[2][medicin_id]",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[2][quantity]",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[3][medicin_id]",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[3][quantity]",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[4][medicin_id]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "cart_medicins[4][quantity]",
+									"value": "45",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/order"
+					},
+					"response": [
+						{
+							"name": "order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cart_medicins[0][medicin_id]",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[0][quantity]",
+											"value": "50",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[1][medicin_id]",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[1][quantity]",
+											"value": "95",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[2][medicin_id]",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[2][quantity]",
+											"value": "15",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[3][medicin_id]",
+											"value": "7",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[3][quantity]",
+											"value": "45",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[4][medicin_id]",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "cart_medicins[4][quantity]",
+											"value": "20",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/order"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 08:26:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 27 Dec 2023 08:26:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"The Order Add Successfuly\",\n    \"data\": {\n        \"Info\": [\n            {\n                \"Number\": 4,\n                \"scientificname\": \"Panax ginseng\",\n                \"commercialname\": \"Red Ginseng\",\n                \"category\": \"Herb/Supplement\",\n                \"company\": \"Nature's Bounty\",\n                \"Quantity\": \"50\",\n                \"expirationdate\": \"2025-03-09\",\n                \"price\": 5600\n            },\n            {\n                \"Number\": 6,\n                \"scientificname\": \"Cetirizine hydrochloride\",\n                \"commercialname\": \"Zyrtec\",\n                \"category\": \"Antihistamine\",\n                \"company\": \"Johnson & Johnson\",\n                \"Quantity\": \"95\",\n                \"expirationdate\": \"2054-09-11\",\n                \"price\": 10500\n            },\n            {\n                \"Number\": 1,\n                \"scientificname\": \"setamol\",\n                \"commercialname\": \"parasetamol\",\n                \"category\": \"headec\",\n                \"company\": \"tkamol\",\n                \"Quantity\": \"15\",\n                \"expirationdate\": \"2025-03-05\",\n                \"price\": 3500\n            },\n            {\n                \"Number\": 7,\n                \"scientificname\": \"Sertraline hydrochloride\",\n                \"commercialname\": \"Zoloft\",\n                \"category\": \"Antidepressant\",\n                \"company\": \"Pfizer\",\n                \"Quantity\": \"45\",\n                \"expirationdate\": \"2026-09-11\",\n                \"price\": 1100\n            },\n            {\n                \"Number\": 3,\n                \"scientificname\": \"Acetaminophen\",\n                \"commercialname\": \"Tylenol\",\n                \"category\": \"Antipyretic\",\n                \"company\": \"Pfizer\",\n                \"Quantity\": \"20\",\n                \"expirationdate\": \"2032-03-04\",\n                \"price\": 9800\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ShowOrder",
+			"item": [
+				{
+					"name": "showorder",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/showorder"
+					},
+					"response": [
+						{
+							"name": "EmptyOrder",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:8000/api/showorder"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Dec 2023 14:55:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Dec 2023 14:55:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"You Don't Have Any Orders To Show It\",\n    \"massages\": \"Go Add Order If You Want To Show It Here\"\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:8000/api/showorder"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 14:31:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 14:31:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"This Is Your Orders\",\n    \"data\": [\n        {\n            \"id\": 55,\n            \"pharmesist_id\": 2,\n            \"status\": \"prepering\",\n            \"paymentStatus\": \"notPayed\",\n            \"created_at\": \"2023-12-26T14:31:29.000000Z\",\n            \"updated_at\": \"2023-12-26T14:31:29.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "fav",
+			"item": [
+				{
+					"name": "selectfav",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "med_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/favorite"
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "med_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/favorite"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:15:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:15:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"This Medicins is Fav\",\n    \"data\": {\n        \"name\": \"parasetamol\",\n        \"pharmesist_id\": 2,\n        \"medicin_id\": \"1\",\n        \"updated_at\": \"2023-12-25T13:15:33.000000Z\",\n        \"created_at\": \"2023-12-25T13:15:33.000000Z\",\n        \"id\": 8\n    }\n}"
+						},
+						{
+							"name": "exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "med_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/favorite"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:15:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:15:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Error\": \"This Medicins Is In Fav Already\"\n}"
+						},
+						{
+							"name": "failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "med_id",
+											"value": "500",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://127.0.0.1:8000/api/favorite"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:16:31 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:16:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Error\": \"Please Try Again\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getfav",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://127.0.0.1:8000/api/getfav"
+					},
+					"response": [
+						{
+							"name": "emptyfav",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://127.0.0.1:8000/api/getfav"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:51:13 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:51:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"The FavList Is Empty\"\n}"
+						},
+						{
+							"name": "favlist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://127.0.0.1:8000/api/getfav"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:53:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Dec 2023 13:53:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"massage\": \"This Is Your FavList\",\n    \"data\": [\n        {\n            \"id\": 13,\n            \"name\": \"parasetamol\",\n            \"pharmesist_id\": \"2\",\n            \"medicin_id\": \"1\",\n            \"created_at\": \"2023-12-25T13:53:25.000000Z\",\n            \"updated_at\": \"2023-12-25T13:53:25.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
