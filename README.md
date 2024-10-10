@@ -1,0 +1,1 @@
+This project aims to help pharmacy owners and warehouse owners to order and deliver medicines quickly and easily, in addition to the possibility of tracking the status of the order by the warehouse owner and the pharmacy owner, and the quantities of medicines in the warehouse are controlled by the system.
